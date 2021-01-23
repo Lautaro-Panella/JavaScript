@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function fuentePequenia() {
+                var texto = document.getElementById("miparrafo");
+                texto.style.fontSize=10;
+            }
+            function fuenteMediana() {
+                var texto = document.getElementById("miparrafo");
+                texto.style.fontSize=13;
+            }
+            function fuenteGrande() {
+                var texto = document.getElementById("miparrafo");
+                texto.style.fontSize=20;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="miparrafo">Esto es una prueba.</p><br><br>
+        <input type="button" value="Fuente Pequeña(10)" onclick="fuentePequenia()">
+        <input type="button" value="Fuente Mediana(13)" onclick="fuenteMediana()">
+        <input type="button" value="Fuente Grande(20)" onclick="fuenteGrande()">
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function mostrarSoluciones() {
+                var solucion1 = document.createElement('li'); 
+                var texto1 = document.createTextNode("Solución 1");
+                solucion1.appendChild(texto1);
+                var solucion2 = document.createElement('li'); 
+                var texto2 = document.createTextNode("Solución 2");
+                solucion2.appendChild(texto2);
+                var lista = document.getElementById("lista").appendChild(solucion1);
+                lista.appendChild(solucion2);
+            }
+        </script>
+    </head>
+    <body>
+        <ul id="lista">
+        </ul>
+        <input type="button" value="Agregar dos (li)" onClick="mostrarSoluciones()">
+    </body>
+</html>

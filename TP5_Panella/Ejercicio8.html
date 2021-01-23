@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <script>
+            function captura7() {
+                var captura = document.getElementById("7");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura8() {
+                var captura = document.getElementById("8");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura9() {
+                var captura = document.getElementById("9");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function capturaPor() {
+                var captura = document.getElementById("por");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura4() {
+                var captura = document.getElementById("4");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura5() {
+                var captura = document.getElementById("5");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura6() {
+                var captura = document.getElementById("6");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function capturaDiv() {
+                var captura = document.getElementById("div");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura1() {
+                var captura = document.getElementById("1");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura2() {
+                var captura = document.getElementById("2");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function captura3() {
+                var captura = document.getElementById("3");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function capturaMen() {
+                var captura = document.getElementById("men");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function capturaClear() {
+                document.getElementById("result").innerText = "";
+            }
+            function captura0() {
+                var captura = document.getElementById("0");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }
+            function capturaIgual() {
+                var captura = document.getElementById("result");
+                var cadena = String(captura.innerHTML);
+                if(cadena.includes('+')) {
+                    var arreglo = cadena.split('+');
+                    var resultado = parseFloat(arreglo[0]) + parseFloat(arreglo[1]);
+                }
+                if(cadena.includes('-')) {
+                    var arreglo = cadena.split('-');
+                    var resultado = parseFloat(arreglo[0]) - parseFloat(arreglo[1]);
+                }
+                if(cadena.includes('x')) {
+                    var arreglo = cadena.split('x');
+                    var resultado = parseFloat(arreglo[0]) * parseFloat(arreglo[1]);
+                }
+                if(cadena.includes('/')) {
+                    var arreglo = cadena.split('/');
+                    var resultado = parseFloat(arreglo[0]) / parseFloat(arreglo[1]);
+                }
+                document.getElementById("result").innerText = resultado;
+            }
+            function capturaMas() {
+                var captura = document.getElementById("mas");
+                var cadena = String(captura.innerHTML);
+                document.getElementById("result").innerText += cadena;
+            }    
+        </script>
+    </head>
+    <body>
+        <table border= "1" width= "30%"> 
+            <tr >
+                <td id="result" colspan="4" style="height: 30px;"></td>
+            </tr>
+            <tr>
+                <td id="7" onclick="captura7()">7</td><td id="8" onclick="captura8()">8</td><td id="9" onclick="captura9()">9</td><td id="por" onclick="capturaPor()">x</td>
+            </tr>
+            <tr>
+                <td id="4" onclick="captura4()">4</td><td id="5" onclick="captura5()">5</td><td id="6" onclick="captura6()">6</td><td id="div" onclick="capturaDiv()">/</td>
+            </tr>
+            <tr>
+                <td id="1" onclick="captura1()">1</td><td id="2" onclick="captura2()">2</td><td id="3" onclick="captura3()">3</td><td id="men" onclick="capturaMen()">-</td>
+            </tr>
+            <tr>
+                <td id="clear" onclick="capturaClear()">C</td><td id="0" onclick="captura0()">0</td><td id="igual" onclick="capturaIgual()">=</td><td id="mas" onclick="capturaMas()">+</td>
+            </tr>
+        </table><br>
+        <p>** Nota: La calculadora resuelve solo una operación a la vez.</p>
+    </body>
+</html>

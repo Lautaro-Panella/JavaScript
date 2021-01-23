@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function validar() {
+                var validacion = document.getElementsByName("radioBtn");
+                if(!validacion[0].checked && !validacion[1].checked) {
+                    alert("Elija una opción.");
+                }
+                for (let i = 0; i < validacion.length; i++) {
+                    if(validacion[i].checked) {
+                        if(validacion[i].value == "y") {
+                            alert("Bienvenido al sitio!");
+                        }
+                        else {
+                            alert("No puede ingresar al sitio :'(");
+                        }
+                    }
+                }    
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <form>
+                <label>ES MAYOR A 18?</label><br>   
+                <input type="radio" name="radioBtn" value="y"> SI<br>
+                <input type="radio" name="radioBtn" value="n"> NO<br>
+                <input type="button" value="VALIDAR" onclick="validar()">
+            </form>
+        </div>
+    </body>
+</html>

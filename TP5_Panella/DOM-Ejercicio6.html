@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function definirAtributo() {
+                var atributo = document.getElementById("tabla1").setAttribute("border", "5px");
+            }
+        </script>
+    </head>
+    <body>
+        <table id="tabla1">
+            <tr>
+            <td>11</td><td>12</td>
+            </tr>
+            <tr> 
+            <td>21</td><td>22</td>
+            </tr>
+        </table><br>
+        <input type="button" value="Definir la propiedad border de la tabla" onClick="definirAtributo()">
+    </body>
+</html> 

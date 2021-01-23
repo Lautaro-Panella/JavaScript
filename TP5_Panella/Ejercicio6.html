@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function abrirVentanaModal() {
+                var ventana = open('','','status=yes,width=600,height=300,menubar=yes');
+                ventana.document.write("Esto es una ventana modal de 600px por 300px!");
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label for="btnAbrir">Presione para abrir una nueva ventana: </label>
+                <input type="button" value="ABRIR" onclick="abrirVentanaModal()">
+            </form>
+        </div>
+    </body>
+</html>

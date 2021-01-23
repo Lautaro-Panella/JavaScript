@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            var sueldo = prompt("Ingrese sueldo:", "");
+            var antiguedad = prompt("Ingrese antiguedad:", "");
+
+            if(sueldo < 500 && antiguedad >= 10) {
+                alert("Le corresponde un aumento del 20%. Sueldo: " + (sueldo*1.2));
+            }
+            if(sueldo < 500 && antiguedad < 10) {
+                alert("Le corresponde un aumento del 5%. Sueldo: " + (sueldo*1.05));
+            }
+            if(sueldo >= 500) {
+                alert("No le corresponde aumento. Sueldo: " + sueldo);
+            }
+        </script>
+    </head>
+    <body>       
+    </body>
+</html>

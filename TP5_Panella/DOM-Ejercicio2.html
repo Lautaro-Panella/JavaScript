@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function contar() {
+                var nodos = document.getElementById("numero").childNodes;
+                var numero = (parseInt(nodos[0].nodeValue))+1;
+                nodos[0].nodeValue = numero;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="numero">1</h1>
+        <input type="button" value="++" onclick="contar()">
+    </body>
+</html>

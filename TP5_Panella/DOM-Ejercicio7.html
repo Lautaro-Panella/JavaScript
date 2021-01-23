@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function enviar() {
+                var error = "";
+                var usuario = document.getElementById("usuario").value;
+                var clave1 = document.getElementById("clave1").value;
+                var clave2 = document.getElementById("clave2").value;
+                if(usuario == "" || clave1 == "" || clave2 == "") {
+                    error = "Complete todos los campos!";
+                }
+                if(clave1 != clave2) {
+                    error += " Las claves no son iguales!";
+                }
+                if (error != "") {
+                    var er = document.getElementById('error');
+                    er.style.color = 'red';
+                    er.innerHTML = error;
+                    er.style.display = 'block';
+                }
+                else {
+                    var er = document.getElementById('error');
+                    er.innerHTML = "Enviado!";
+                }   
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <label for="nombre">Usuario:</label>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="clave1">Clave:</label>
+            <input type="text" id="clave1" name="clave1"><br>
+            <label for="clave2">Repita clave:</label>
+            <input type="text" id="clave2" name="clave2"><br>
+            <input type="button" value="ENVIAR" onclick="enviar()">
+        </form>
+        <div id="error"></div>
+    </body>
+</html>
